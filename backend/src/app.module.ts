@@ -5,7 +5,6 @@ import { TransactionModule } from './modules/transaction/transaction.module';
 import { CategoryModule } from './modules/category/category.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { SumaryResponseModule } from './modules/sumary-response/sumary-response.module';
 
 @Module({
   imports: [
@@ -28,7 +27,6 @@ import { SumaryResponseModule } from './modules/sumary-response/sumary-response.
     }),
     TransactionModule,
     CategoryModule,
-    SumaryResponseModule,
   ],
   controllers: [AppController],
   providers: [AppService],
